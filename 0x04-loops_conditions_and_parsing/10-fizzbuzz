@@ -8,7 +8,7 @@ for ((t = 1; t <= 100; t++)); do
 	elif (("$t" % 3 == 0)); then
 		echo "Fizz"
 	elif (("$t" % 5 == 0)); then
-		echo "Fizz"
+		echo "Buzz"
 	else
 		echo "$t"
 	fi

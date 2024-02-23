@@ -3,7 +3,7 @@
 
 for t in "$pwd"; do
 	if [ -f "$t" && [ "${t:0:1}" != "." ]; then
-	      name=$(echo "$file" | cut -d '-' -f 2-)
+		name=$(echo "$file" | sed 's/.*'-'\(.*\)/\1/'
 	      echo "$name"
        	fi
 done	

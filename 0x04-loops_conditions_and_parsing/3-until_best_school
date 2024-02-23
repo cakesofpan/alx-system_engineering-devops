@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #displays Best School 10times using until
 
-t=1
+t=0
 until (("$t" == 10)); do
 	echo "Best School"
 	(( t++ ))
