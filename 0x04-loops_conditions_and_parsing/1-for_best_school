@@ -4,3 +4,4 @@
 for ((t = 0; t <= 10; t++)) do
 	echo "Best School"
 done
+echo >> 1-for_best_school
