@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #displays PID and process name of those conntaining bash
-pidof -z -x -s -l bash
+
+pgrep -a bash
