@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#+displays nums from 1-100. multiples of:
+#+3 and 5: fizzbuzz, 3: fizz, 5: buzz
+
+for ((t = 1; t <= 100; t++)); do
+	if (("$t" % 3 == 0 && "$t" % 5 == 0)); then
+		echo "FizzBuzz"
+	elif (("$t" % 3 == 0)); then
+		echo "Fizz"
+	elif (("$t" % 5 == 0)); then
+		echo "Fizz"
+	else
+		echo "$t"
+	fi
+done

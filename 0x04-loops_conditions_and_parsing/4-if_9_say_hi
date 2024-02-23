@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#writes Best School 10times using while loop, 9th iteration prints an extra Hi
+
+t=0
+while (("$t" < 10)); do
+	if [ "$t" == 9 ]; then
+		echo "Hi"
+	fi
+	echo "Best School"
+        (( t++ ))
+done

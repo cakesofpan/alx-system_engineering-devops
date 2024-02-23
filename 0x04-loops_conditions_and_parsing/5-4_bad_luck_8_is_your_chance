@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#writes Best School 10 times except for the following iterations:
+#+4th: bad luck, 8th: good luck
+
+t=0
+while (("$t" < 10)); do
+        if [ "$t" == 3 ]; then
+                echo "bad luck"
+	elif [ "$t" == 7 ]; then
+		echo "good luck"
+	else
+        	echo "Best School"
+	fi
+        (( t++ ))
+done

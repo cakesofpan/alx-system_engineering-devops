@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#displays nums from 1-20 and prints in the following iterations:
+#+4th: bad luck from china, 9th: bad luck from Japan, 17th: bad luck from italy
+
+t=1
+cnt=20
+while (("$t" <= "$cnt")); do
+        echo "$t"
+
+	case "$t" in
+	4)	echo "bad luck from China"
+		;;
+
+	9)	echo "bad luck from Japan"
+		;;
+
+	17)        echo "bad luck from Italy"
+	esac
+	(( t++ ))
+done

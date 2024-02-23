@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#displays 12hrs and 59min
+
+hrs=2
+min=59
+t=0
+u=1
+
+while [ "$t" -le "$hrs" ]; do
+	echo "Hour: $t"
+     
+	while [ "$u" \< "$min" ]; do
+		echo "$u"
+		(( u++ ))
+
+		if [ "$u" -eq 59 ]; then
+			u=1
+		fi
+	done
+
+	(( t++ ))
+done

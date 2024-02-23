@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#writes Best School 10times using while loop
+
+t=0
+while (("$t" < 10)); do
+	echo "Best School"
+	let "t+=1"
+done
