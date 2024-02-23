@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#+groups visitors with by HTTP Status code and visitor IP and display data
+
+awk '{count[$1 " " $9]++} END {for (ip_code in count) print count[ip_code], ip_code}' apache-access.log | sort -rn

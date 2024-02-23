@@ -4,6 +4,5 @@
 t=0
 while (("$t" < 10)); do
 	echo "Best School"
-	let "t+=1"
+	(( t++ ))
 done
-echo >> 2-while_best_school

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #+displays current directory in list format with the names after the kadash
 
-for t in "$pwd"; do
-	if [ -f "$t" && [ "${t:0:1}" != "." ]; then
-		name=$(echo "$file" | sed 's/.*'-'\(.*\)/\1/'
+for t in *; do
+	if [ -f "$t" ] && [ "${t:0:1}" != "." ]; then
+		name=$(echo "$file" | sed 's/.*-//')
 	      echo "$name"
        	fi
 done	
