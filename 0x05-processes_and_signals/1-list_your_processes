@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+#displays lsit of currently running processes
+
 ps aux
