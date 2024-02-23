@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-pidof -l bash
+pgrep -a bash
